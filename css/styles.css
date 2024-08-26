@@ -27,11 +27,24 @@ img {
     display: block;
 }
 
+section{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 
+.container{
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
 
+}
 /*------------------------------------------------------------------------------------------------*/
 /*HEADER*/
 /*------------------------------------------------------------------------------------------------*/
+.top-line .container{
+    display: flex;
+    
+}
 .top-line {
     width: 100%;
     height: 72px;
@@ -39,6 +52,7 @@ img {
     align-items: center;
     justify-content: space-between;
     background-color: #FFFFFF;
+    border-bottom: 1px solid #e7e9fc
 }
 /* LOGO */
 
@@ -61,6 +75,7 @@ img {
 /* MENU */
 .top-line .logo-nav-head{
     display: flex;
+    align-items: center;
 }
 .top-line .logo-nav-head .menu-nav{
     display: flex;
@@ -73,6 +88,7 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    padding: 24px 0;
 }
 
 .nav-menu-items:hover, .nav-menu-items:focus{
@@ -114,6 +130,7 @@ img {
 /* SECTION 1 */
 .service-section {
     background-color: #2e2f42;
+    padding: 188px 472px;
 }
 
 .service-text {
@@ -124,17 +141,18 @@ img {
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
-    padding: 188px 472px 48px 472px;
+    max-width: 496px;
+    margin-bottom: 48px;
 
 }
 
 .service-button {
         background-color: #4d5ae5;
-        padding: 16px 32px;
-        border-radius: 4px;
-        margin: 0px 635px 188px 810px;
-
+        display: block;
+        min-width: 169px;
         height: 56px;
+        border: none;
+        border-radius: 4px;
     /*текст кнокпи*/
         font-weight: 500;
         font-size: 16px;
@@ -150,8 +168,19 @@ img {
     }
 
 /* SECTION 2 */
-.h2-section-two{
-    display:none;
+.benefit-section{
+    padding: 120px 0;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+    white-space: nowrap;
 }
 
 .team-tables{
@@ -169,6 +198,7 @@ img {
 .benefit-list-section{
     width: 264px;
     height: 104px;
+    width: calc((100% - 72px) / 4);
 
 }
 
@@ -186,28 +216,10 @@ img {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 /* SECTION 3 */
-.portfolio-row {
-    margin: 0px 156px 120px 156px;
-}
-.portfolio-tables{
-    display: flex;
-    gap:24px;
-}
-
-.team-section{
-    background-color: #F4F4FD;
-}
-
-.card-info{
-    margin: 32px 16px;
-    gap: 8px;
-}
-.container-section-3{
-    margin-bottom: 120px;
-}
 /* SECTION H2 HEADER  */
 .section-h-two-header{
     font-weight: 700;
@@ -216,13 +228,18 @@ img {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2e2f42;
-    padding: 120px 639px 72px 639px;
+    margin-bottom: 72px;
+    text-align: center;
 }
 /* -------------------------------------------------------------------------------------------------------- */
 .team-card {
     background-color: #fff;
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
 }
-
+.team-card img{
+    width: 100%;
+}
 .card-header {
     font-weight: 500;
     font-size: 20px;
@@ -230,6 +247,7 @@ img {
     letter-spacing: 0.02em;
     color: #2e2f42;
     text-align: center;
+    margin-bottom: 8px;
 }
 
 .card-paragraph {
@@ -242,17 +260,42 @@ img {
 }
 
 /* SECTION 4 */
+.portfolio-row {
+    margin: 0px 156px 120px 156px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+
+.team-section{
+    background-color: #F4F4FD;
+    padding: 120px 0;
+}
+
+.card-info{
+    margin: 32px 0px;
+    gap: 8px;
+}
+
+.portfolio-section{
+    padding: 120px 0;
+}
 
 .project-card{
     background-color: #fff;
+    width: calc((100% - 48px) / 3);
 }
-
+.project-card img {
+    width: 100%;
+}
 .card-header{
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 .card-paragraph{
     font-weight: 400;
@@ -261,13 +304,22 @@ img {
     letter-spacing: 0.02em;
     color: #434455;
 }
-
+.card-container{
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+}
 /*------------------------------------------------------------------------------------------------*/
 /*FOOTER*/
 /*------------------------------------------------------------------------------------------------*/
-
+.footer-class .container{
+    height: 112px;
+    width: 264px;
+    margin-left: 156px;
+}
 .footer-class{
     background-color: #2e2f42;
+    padding: 100px 0;
 }
 
 .footer-logo{
@@ -278,6 +330,8 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .footer-paragraph{

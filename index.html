@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
     <!-- Normalize css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.0/modern-normalize.min.css"
         integrity="sha512-3axTZ/bKFZH5/qLFTl4U+mDbBDFW+5QO5L7D1HnOhlhJbcNDIVJxoNm6It77g0eUdzfKZlHirayqRC2qJaAOJw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
     <!-- Fonts-->
     <link rel='preconnect' href='https://fonts.googleapis.com' />
     <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
@@ -17,6 +17,7 @@
 <body>
     <!--Header content-->
     <header class="top-line">
+        <div class="container">
             <nav class="logo-nav-head">
                 <a class="logo" href="./index.html">Web<span class="logo-span">Studio</span></a>
                 <ul class="menu-nav">
@@ -35,18 +36,21 @@
                     </li>
                 </ul>
             </address>
+        </div>
     </header>
     <!--Main content-->
     <main>
         <!--Section 1-->
         <section class="service-section">
+            <div class="container">
                 <h1 class="service-text">Effective Solutions for Your Business</h1>
                 <button class="service-button" type="button">Order Service</button>
+            </div>
         </section>
         <!--Section 2-->
         <section class="benefit-section">
             <div class="container">
-                <h2 class="h2-section-two">Benefits</h2>
+                <h2 class="visually-hidden">Benefits</h2>
                 <ul class="benefit-tables">
                     <li class="benefit-list-section">
                         <h3 class="benefit-header">Strategy</h3>
@@ -69,7 +73,7 @@
         </section>
         <!--Section 3-->
         <section class="team-section">
-            <div class="container-section-3">
+            <div class="container">
                 <h2 class="section-h-two-header">Our Team</h2>
                 <ul class="team-tables">
                     <li class="team-card">
@@ -108,40 +112,48 @@
             <div class="container">
                 <h2 class="section-h-two-header">Our Portfolio</h2>
                 <ul class="portfolio-row">
-                    <div class="portfolio-tables">
                         <li class="project-card">
                             <img src="./images/img_5.jpg" width="360" height="300" alt="Banking App image">
-                            <h3 class="card-header">Banking App</h3>
-                            <p class="card-paragraph">App</p>
+                            <div class="card-container">
+                                <h3 class="card-header">Banking App</h3>
+                                <p class="card-paragraph">App</p>
+                            </div>
                         </li>
                         <li class="project-card">
                             <img src="./images/img_6.jpg" width="360" height="300" alt="Cashless Payment image">
-                            <h3 class="card-header">Cashless Payment</h3>
-                            <p class="card-paragraph">Marketing</p>
+                            <div class="card-container">
+                                <h3 class="card-header">Cashless Payment</h3>
+                                <p class="card-paragraph">Marketing</p>
+                            </div>
                         </li>
                         <li class="project-card">
                             <img src="./images/img_7.jpg" width="360" height="300" alt="Meditation App image">
-                            <h3 class="card-header">Meditation App</h3>
-                            <p class="card-paragraph">App</p>
+                            <div class="card-container">
+                                <h3 class="card-header">Meditation App</h3>
+                                <p class="card-paragraph">App</p>
+                            </div>
                         </li>
-                    </div>
-                    <div class="portfolio-tables">
                         <li class="project-card">
                             <img src="./images/img_8.jpg" width="360" height="300" alt="Taxi Service image">
-                            <h3 class="card-header">Taxi Service</h3>
-                            <p class="card-paragraph">Marketing</p>
+                            <div class="card-container">
+                                <h3 class="card-header">Taxi Service</h3>
+                                <p class="card-paragraph">Marketing</p>
+                            </div>
                         </li>
                         <li class="project-card">
                             <img src="./images/img_9.jpg" width="360" height="300" alt="Screen Illustrations image">
-                            <h3 class="card-header">Screen Illustrations</h3>
-                            <p class="card-paragraph">Design</p>
+                            <div class="card-container">
+                                <h3 class="card-header">Screen Illustrations</h3>
+                                <p class="card-paragraph">Design</p>
+                            </div>
                         </li>
                         <li class="project-card">
                             <img src="./images/img_10.jpg" width="360" height="300" alt="Online Courses image">
-                            <h3 class="card-header">Online Courses</h3>
-                            <p class="card-paragraph">Marketing</p>
+                            <div class="card-container">
+                                <h3 class="card-header">Online Courses</h3>
+                                <p class="card-paragraph">Marketing</p>
+                            </div>
                         </li>
-                    </div>
                 </ul>
             </div>
         </section>
