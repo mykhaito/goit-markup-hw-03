@@ -130,7 +130,7 @@ section{
 /* SECTION 1 */
 .service-section {
     background-color: #2e2f42;
-    padding: 188px 472px;
+    padding: 188px 0px;
 }
 
 .service-text {
@@ -172,21 +172,14 @@ section{
     padding: 120px 0;
 }
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0;
-    white-space: nowrap;
-}
+    position: fixed;
+    transform: scale(0);
+  }
 
 .team-tables{
     display: flex;
     margin: 0px 156px 120px 156px;
-    gap: 25px;
+    gap: 24px;
 }
 
 .benefit-tables{
@@ -274,7 +267,7 @@ section{
 }
 
 .card-info{
-    margin: 32px 0px;
+    margin: 32px 0;
     gap: 8px;
 }
 
