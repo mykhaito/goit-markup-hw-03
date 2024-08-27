@@ -172,8 +172,16 @@ section{
     padding: 120px 0;
 }
 .visually-hidden {
-    position: fixed;
-    transform: scale(0);
+    position: absolute;
+    width: 1;
+    height: 1;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
   }
 
 .team-tables{
@@ -267,7 +275,7 @@ section{
 }
 
 .card-info{
-    margin: 32px 0;
+    padding: 32px 0;
     gap: 8px;
 }
 
