@@ -45,7 +45,6 @@ section {
   width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
-  text-align: center;
   align-items: center;
 }
 /*------------------------------------------------------------------------------------------------*/
@@ -336,6 +335,10 @@ section {
   margin-bottom: 16px;
 }
 
+.footer-logo-span {
+  color: #f4f4fd;
+}
+
 .footer-paragraph {
   font-weight: 400;
   font-size: 16px;
@@ -343,8 +346,4 @@ section {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   max-width: 264px;
-}
-
-.footer-logo-span {
-  color: #f4f4fd;
 }
